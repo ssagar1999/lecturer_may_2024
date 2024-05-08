@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribute Selector Examples</title>
+    <style>
+        /* Example 1: Selecting elements with a specific attribute */
+        [title] {
+            color: red;
+        }
+
+        /* Example 2: Selecting elements with a specific attribute value */
+        [type="submit"] {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        /* Example 3: Selecting elements with an attribute value starting with a specific string */
+        [href^="https"] {
+            color: green;
+        }
+
+        /* Example 4: Selecting elements with an attribute value ending with a specific string */
+        [src$=".png"] {
+            border: 2px solid #000;
+        }
+
+        /* Example 5: Selecting elements with an attribute value containing a specific string */
+        [class*="btn"] {
+            background-color: yellow;
+            padding: 5px 10px;
+            border: 1px solid #000;
+        }
+
+        /* Example 6: Selecting elements with an attribute value matching a specified list of values */
+        [type="text"][disabled] {
+            border: 5px solid #12cc60;
+            border-radius: 5px;
+            padding: 5px;
+        }
+
+      
+    
+        /* Example 7: Selecting elements with an attribute value whose language subcode is equal to the specified value */
+        [lang|="en"] {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h2>Example 1: Selecting elements with a specific attribute</h2>
+    <p title="Tooltip Text">This paragraph has a title attribute.</p>
+
+    <h2>Example 2: Selecting elements with a specific attribute value</h2>
+    <button type="submit">Submit</button>
+
+    <h2>Example 3: Selecting elements with an attribute value starting with a specific string</h2>
+    <a href="https://example.com">Link to Example</a>
+
+    <h2>Example 4: Selecting elements with an attribute value ending with a specific string</h2>
+    <img src="example.png" alt="Example Image">
+
+    <h2>Example 5: Selecting elements with an attribute value containing a specific string</h2>
+    <button class="btn-primary">Primary Button</button>
+
+    <h2>Example 6: Selecting elements with an attribute value matching a specified list of values</h2>
+    <input type="text" required disabled>
+
+   
+  
+    <h2>Example 8: Selecting elements with an attribute value whose language subcode is equal to the specified value</h2>
+    <p lang="en-us">English Paragraph</p>
+</body>
+</html>
