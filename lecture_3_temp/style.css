@@ -1,6 +1,6 @@
-p{
+/* p{
     background-color: rgb(176, 104, 104);
-}
+} */
 
 a{
     color: black;
@@ -8,4 +8,18 @@ a{
 }
 span{
     background-color: palegoldenrod;
+}
+
+.addColor{
+    color: red;
+}
+
+#myId em{
+    color: rgb(14, 250, 171);
+}
+#myId .myClass{
+    color: red;
+}
+.myContent > p{
+    background-color: red;
 }
