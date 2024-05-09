@@ -16,6 +16,10 @@ nav a {
     transition: background-color 0.3s; /* Smooth transition for background color */
 }
 
+nav:nth-of-type(2){
+    background-color: rgb(79, 69, 69);
+}
+
 nav a:hover {
     background-color: #555;
 }
