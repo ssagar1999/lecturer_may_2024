@@ -1,0 +1,26 @@
+nav {
+    background-color: #333;
+    padding: 10px;
+    display: flex; /* Use flexbox */
+    justify-content: center; /* Center align items horizontally */
+}
+
+nav p {
+    margin: 0;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px; /* Increased padding */
+    transition: background-color 0.3s; /* Smooth transition for background color */
+}
+
+nav a:hover {
+    background-color: #555;
+}
+
+/* Add some spacing between links */
+nav p + p {
+    margin-left: 20px;
+}
