@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Specificity</title>
+    <style>
+        /*******************************
+                                    attributes
+                                    pseudo-class    pseudo-element  
+        !important   inline   ids   classes         tag(type)
+#bob    0            0        1        0            0
+p       0            0        0        0            1
+.red    0            0        0        1            0
+a[href] 0            0        0        1            1
+a>span  0            0        0        0            2
+.red .x 0            0        0        2            0    
+        
+        
+        *, +, >, ~, and :not() have NO effect on specificity
+        ********************************/
+        
+        html{
+            font-size: 20px;
+        }
+        p:first-of-type{
+            color: gold !important;
+        }
+        main[lang] p{
+            color: red;
+        }
+        #home p{
+            color: rebeccapurple;
+        }
+        
+        body aside ul li a {
+            text-decoration: overline;
+        }
+        #home a{
+            text-decoration:line-through;
+        }
+       
+    </style>
+</head>
+<body id="home">
+    <main class="main" lang="en">
+        <h1 class="title" id="main-title">Main Title</h1>
+        <p style="color:lightgreen">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia obcaecati iste ut repudiandae! Aliquid vero accusantium, pariatur neque tempore dignissimos dolore, placeat et autem libero, debitis, suscipit repellendus natus quibusdam?</p>
+        <p style="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam ratione doloremque, tempore cum odio, nam expedita assumenda neque dignissimos fugit, voluptatum ad aperiam eligendi qui, esse perspiciatis deleniti nostrum fugiat.</p>
+    </main>
+    <aside class="ads">
+        <ul id="ad-bar">
+            <li class="ad-item">
+                <a href="#" class="ad-link">ad link 1</a>
+            </li>
+            <li class="ad-item">
+                <a href="#" class="ad-link">ad link 2</a>
+            </li>
+            <li class="ad-item">
+                <a href="#" class="ad-link">ad link 3</a>
+            </li>
+        </ul>
+    </aside>
+</body>
+</html>

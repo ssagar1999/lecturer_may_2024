@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Box Model Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .box {
+            width: 300px; /* Width of the content */
+            padding: 20px; /* Space inside the box, around the content */
+            border: 5px solid #333; /* Border width and color */
+            margin: 20px auto; /* Space outside the box */
+            background-color: #fff; /* Background color of the box */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adds a shadow to the box */
+        }
+
+        .box p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="box">
+        <h1>CSS Box Model</h1>
+        <p>The box model in CSS consists of: content, padding, border, and margin.</p>
+    </div>
+
+    <div>
+        <div id="id1">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex error maxime quas porro, asperiores nobis sit enim perferendis. Quis consequatur perspiciatis hic incidunt error veniam impedit omnis quisquam consectetur iure!
+        </div>
+        <div id="id2">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex error maxime quas porro, asperiores nobis sit enim perferendis. Quis consequatur perspiciatis hic incidunt error veniam impedit omnis quisquam consectetur iure!
+        </div>
+        <div id="id3">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex error maxime quas porro, asperiores nobis sit enim perferendis. Quis consequatur perspiciatis hic incidunt error veniam impedit omnis quisquam consectetur iure!
+        </div>
+    </div>
+
+</body>
+</html>
