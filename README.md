@@ -1,5 +1,4 @@
 
-<img src="https://i.imgur.com/oY0P1r0.png" width="400">
 
 # JS Classes
 
